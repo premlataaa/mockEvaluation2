@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 
 const TicketSchema = new mongoose.Schema({
-    userId:{type:mongoode.Schema.Types.ObjectId,ref:"User"},
+    userId:{type:mongoose.Schema.Types.ObjectId,ref:"User"},
     dateOfTravel:{type:Date, required:true},
     modeOfTravel:{type:String,enum:["train", "bus"], required:true},
     perHeadPrice:{type:Number},

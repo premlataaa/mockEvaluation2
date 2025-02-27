@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/mongo.config")
 const authToken = require("./middleware/auth.mw")
-const isAdmin = require("../middleware/auth.mw");
+const isAdmin = require("./middleware/auth.mw");
 const UserRouter = require("./routes/user.route");
 const TickerRoute = require("./routes/ticket.route")
 require ("dotenv").config();

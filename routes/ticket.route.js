@@ -24,4 +24,4 @@ Router.get("/", authToken, isAdmin, async (req, res) => {
   }
 });
 
-module.exports = TicketRoute;
+module.exports = Router;
